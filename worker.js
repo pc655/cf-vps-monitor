@@ -7651,9 +7651,7 @@ async function apiRequest(url, options = {}) {
 // 加载默认凭据信息（本地显示，无需API调用）
 function loadDefaultCredentials() {
     const credentialsInfo = document.getElementById('defaultCredentialsInfo');
-    if (credentialsInfo) {
-        credentialsInfo.innerHTML = '默认账号密码: <strong>admin</strong> / <strong>monitor2025!</strong><br><small class="text-danger fw-bold">建议首次登录后修改密码</small>';
-    }
+   
 }
 
 // 检查登录状态
