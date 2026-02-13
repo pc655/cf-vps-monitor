@@ -7651,7 +7651,9 @@ async function apiRequest(url, options = {}) {
 // 加载默认凭据信息（本地显示，无需API调用）
 function loadDefaultCredentials() {
     const credentialsInfo = document.getElementById('defaultCredentialsInfo');
-   
+    if (credentialsInfo) {
+        credentialsInfo.innerHTML = '';
+    }
 }
 
 // 检查登录状态
